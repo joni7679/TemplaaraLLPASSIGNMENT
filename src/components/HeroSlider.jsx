@@ -7,24 +7,130 @@ const HeroSlider = () => {
     <>
       <section className='col-lg-9 col-md-8 hero-slider-container'>
 
-        <div className='hero-slide'>
-          <div className="row px-5 py-4 align-items-center h-100">
-            <div className='hero-des col-md-6 d-flex align-items-start  justify-content-start flex-column gap-3'>
-              <div className="d-flex align-items-center gap-3">
-                <img src={appleLogo} alt="applelogo" />
-                <span className='hero-brand-name'>iPhone 14 Series</span>
-              </div>
-              <div className='hero-heading'>
-                <h1>Up to 10% off Voucher</h1>
-              </div>
-              <a href="#" className='shop-now-btn'>shop now  <i className="bi bi-arrow-right"></i></a>
+        <div id="heroCarousel" className="carousel slide h-100" data-bs-ride="carousel">
 
+          <div className="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="0"
+              className="active"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="1"
+              className='carousel-btn'
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <div className="carousel-inner h-100">
+            <div className="carousel-item active h-100">
+              <div className='hero-slide h-100' >
+                <div className="row px-5 py-4 align-items-center h-100">
+                  <div className='hero-des col-md-6 d-flex align-items-start justify-content-center flex-column gap-3'>
+                    <div className="d-flex align-items-center gap-3">
+                      <img src={appleLogo} alt="applelogo" />
+                      <span className='hero-brand-name'>
+                        iPhone 14 Series
+                      </span>
+                    </div>
+                    <div className='hero-heading'>
+                      <h1>Up to 10% off Voucher</h1>
+                    </div>
+                    <a href="#" className='shop-now-btn'>
+                      Shop Now <i className="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                  <div className='hero-img-container col-md-6'>
+                    <img src={heroImg} className='hero-img' alt="heroimg" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className='hero-img-container col-md-6'>
-              <img src={heroImg} className='hero-img' alt="heroimg" />
+            <div className="carousel-item h-100">
+              <div className='hero-slide h-100'>
+                <div className="row px-5 py-4 align-items-center h-100">
+                  <div className='hero-des col-md-6 d-flex align-items-start justify-content-center flex-column gap-3'>
+                    <div className="d-flex align-items-center gap-3">
+                      <span className='hero-brand-name'>
+                        PlayStation 5
+                      </span>
+                    </div>
+                    <div className='hero-heading'>
+                      <h1>Gaming Experience Like Never Before</h1>
+                    </div>
+                    <a href="#" className='shop-now-btn'>
+                      Shop Now <i className="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                  <div className='hero-img-container col-md-6'>
+                    <img src={heroImg} className='hero-img' alt="ps5" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item h-100">
+              <div className='hero-slide h-100'>
+                <div className="row px-5 py-4 align-items-center h-100">
+                  <div className='hero-des col-md-6 d-flex align-items-start justify-content-center flex-column gap-3'>
+                    <div className="d-flex align-items-center gap-3">
+                      <span className='hero-brand-name'>
+                        PlayStation 5
+                      </span>
+                    </div>
+                    <div className='hero-heading'>
+                      <h1>Gaming Experience Like Never Before</h1>
+                    </div>
+                    <a href="#" className='shop-now-btn'>
+                      Shop Now <i className="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                  <div className='hero-img-container col-md-6'>
+                    <img src={heroImg} className='hero-img' alt="ps5" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item h-100">
+              <div className='hero-slide h-100'>
+                <div className="row px-5 py-4 align-items-center h-100">
+                  <div className='hero-des col-md-6 d-flex align-items-start justify-content-center flex-column gap-3'>
+                    <div className="d-flex align-items-center gap-3">
+                      <span className='hero-brand-name'>
+                        PlayStation 5
+                      </span>
+                    </div>
+                    <div className='hero-heading'>
+                      <h1>Gaming Experience Like Never Before</h1>
+                    </div>
+                    <a href="#" className='shop-now-btn'>
+                      Shop Now <i className="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                  <div className='hero-img-container col-md-6'>
+                    <img src={heroImg} className='hero-img' alt="ps5" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
       </section>
     </>
