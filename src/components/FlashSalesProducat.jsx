@@ -3,6 +3,7 @@ import p1 from "../assets/producat.png"
 import { products } from '../data/flashsalesProducat'
 import ProductCard from './ProductCard'
 import Button from './Button'
+import Countdown from './Countdown'
 
 const FlashSalesProducat = () => {
     return (
@@ -13,9 +14,9 @@ const FlashSalesProducat = () => {
                     <h2 className="section-label">Today's</h2>
                 </div>
                 <div className="d-flex justify-content-between align-items-end flex-wrap gap-4 mb-4">
-                    <div className='mt-3'>
+                    <div className='mt-3 flash-part'>
                         <h2 className='inter'>Flash Sales</h2>
-                        <div></div>
+                        <Countdown/>
                     </div>
                     <div className='d-flex gap-2'>
                         <button class="arrow-btn" aria-label="Scroll Left" fdprocessedid="zthycn">

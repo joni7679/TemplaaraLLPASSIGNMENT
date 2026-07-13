@@ -541,7 +541,16 @@
   font-family: var(--font-family);
 }
 
+.flash-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 57%;
 
+}
+.count{
+  font-size: var(--font-size-5xl);
+}
 
 .explore-section {
   margin-top: 70px;
@@ -782,4 +791,19 @@
 
 .social-links a:hover {
   color: var(--primary-color)
+}
+
+.countdown span {
+  font-size: 12px !important;
+  font-weight: 500;
+}
+
+.countdown h3 {
+  font-size: 33px !important;
+  line-height: 1;
+}
+
+.countdown span {
+  font-size: 45px;
+  color: #ff6b6b;
 }
