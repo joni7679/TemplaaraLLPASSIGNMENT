@@ -3,7 +3,7 @@ import React from "react";
 const Countdown = () => {
     return (
         <div className="">
-            <div className="d-flex align-items-center justify-content-center gap-3 text-center">
+            <div className="d-flex res-countdown align-items-center justify-content-center gap-3 text-center">
 
                 <div className="col-3">
                     <span className="mb-2 fw-semibold ">Days</span>

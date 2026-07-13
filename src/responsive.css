@@ -1,4 +1,17 @@
+@media (max-width:1195px) {
+    .flash-part {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
 @media (max-width: 767.98px) {
+    .res-countdown {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .music-promo-banner {
         padding: var(--padding-4xl);
     }
