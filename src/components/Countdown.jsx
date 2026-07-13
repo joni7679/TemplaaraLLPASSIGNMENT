@@ -6,7 +6,7 @@ const Countdown = () => {
             <div className="d-flex align-items-center justify-content-center gap-3 text-center">
 
                 <div className="col-3">
-                    <span className="mb-2 ">Days</span>
+                    <span className="mb-2 fw-semibold ">Days</span>
                     <h3 className="fw-bold count ">03</h3>
                 </div>
 
@@ -15,7 +15,7 @@ const Countdown = () => {
                 </div>
 
                 <div className="col-3">
-                    <span className="mb-2">Hours</span>
+                    <span className="mb-2 fw-semibold">Hours</span>
                     <h3 className="fw-bold  count">03</h3>
                 </div>
 
@@ -24,7 +24,7 @@ const Countdown = () => {
                 </div>
 
                 <div className="col-3">
-                    <span className="mb-2">Minutes</span>
+                    <span className="mb-2 fw-semibold">Minutes</span>
                     <h3 className="fw-bold  count">03</h3>
                 </div>
 
@@ -33,7 +33,7 @@ const Countdown = () => {
                 </div>
 
                 <div className="col-3">
-                    <span className="mb-2">Seconds</span>
+                    <span className="mb-2 fw-semibold">Seconds</span>
                     <h3 className="fw-bold count ">03</h3>
                 </div>
 
