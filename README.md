@@ -58,7 +58,7 @@ src/
 Clone the repository:
 
 ```bash
-git clone your-repository-link
+git clone git@github.com:joni7679/TemplaaraLLPASSIGNMENT.git
 ```
 
 Install dependencies:
