@@ -1,0 +1,108 @@
+@media (max-width: 767.98px) {
+    .music-promo-banner {
+        padding: var(--padding-4xl);
+    }
+
+    .music-promo-title {
+        font-size: var(--font-size-4xl);
+    }
+
+    .music-countdown {
+        gap: var(--padding-lg);
+    }
+
+    .music-countdown-circle {
+        width: 50px;
+        height: 50px;
+        font-size: var(--font-size-search);
+    }
+
+    .music-countdown-circle span:last-child {
+        font-size: 9px;
+    }
+
+    .product-card {
+        margin: auto;
+        width: 100%;
+    }
+}
+
+@media(max-width:576px) {
+
+    .content {
+        left: 20px;
+        bottom: 25px;
+    }
+
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+
+    .content p {
+        font-size: 15px;
+    }
+
+
+    .feature-card {
+        height: 320px;
+    }
+
+}
+
+@media(max-width:992px) {
+
+    .feature-grid {
+
+        display: block;
+
+        height: auto;
+
+    }
+
+
+    .big-card,
+    .women-card,
+    .small-card {
+
+        height: 400px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .right-area {
+
+        display: block;
+
+    }
+
+
+    .bottom-area {
+
+        display: block;
+
+    }
+
+}
+
+
+
+
+@media(max-width:992px) {
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .big-card,
+    .women-card,
+    .small-card {
+        height: 400px;
+        grid-row: auto;
+    }
+
+}

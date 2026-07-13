@@ -9,6 +9,8 @@ import BestSelling from '../components/BestSelling'
 import Footer from '../components/Footer'
 import MusicPromo from '../components/MusicPromo'
 import Explore from '../components/Explore'
+import Services from '../components/Services'
+import NewArrival from '../components/NewArrival'
 
 const Home = () => {
     return (
@@ -28,8 +30,10 @@ const Home = () => {
             <BestSelling />
             <MusicPromo />
             <Explore />
-            <Footer />
+            <NewArrival/>
+            <Services />
 
+            <Footer />
         </>
     )
 }

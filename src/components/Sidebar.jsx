@@ -10,8 +10,9 @@ const Sidebar = () => {
                         subcategories.map((cate) => {
                             const { id, name, hasSubMenu } = cate
                             return (
-                                <li key={id} className='list-group-item'>
-                                    <a href="#" className=''>{name}</a>
+                                <li key={id} className='list-group-item d-flex align-items-center justify-content-between'>
+                                    <a href="#" className=''>{name} </a>
+                                    <span>{hasSubMenu && <i className="bi bi-chevron-right fs-7 text-dark"></i>}</span>
                                 </li>
                             )
                         })

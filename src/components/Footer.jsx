@@ -1,102 +1,47 @@
 import React from 'react';
 import qrcodeImg from "../assets/qr-code.png"
+import { accoutnMenu, quickMenu, socialLinks } from '../data/footerdata';
 export default function Footer() {
-
+    const handleScrollToTop = (event) => {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
     const support = [
         {
             adderss: "111 Bijoy sarani, Dhaka, DH 1515, Bangladesh."
         },
 
     ]
-    const accoutnMenu = [
-        {
-            id: 1,
-            name: "My Account",
-        },
-        {
-            id: 2,
-            name: "Login / Register",
-        },
-        {
-            id: 3,
-            name: "Cart",
-        },
-        {
-            id: 4,
-            name: "Wishlist",
-        },
-        {
-            id: 5,
-            name: "Shop",
-        },
-    ]
-    const quickMenu = [
-        {
-            id: 1,
-            name: "Privacy Policy",
-        },
-        {
-            id: 2,
-            name: "Terms Of Use",
-        },
-        {
-            id: 3,
-            name: "FAQ",
-        },
-        {
-            id: 4,
-            name: "Contact",
-        },
-
-    ]
-    const socialLinks = [
-        {
-            id: 1,
-            name: "Facebook",
-            icon: "bi bi-facebook",
-            link: "#",
-        },
-        {
-            id: 2,
-            name: "Twitter",
-            icon: "bi bi-twitter",
-            link: "#",
-        },
-        {
-            id: 3,
-            name: "Instagram",
-            icon: "bi bi-instagram",
-            link: "#",
-        },
-        {
-            id: 4,
-            name: "Linkedin",
-            icon: "bi bi-linkedin",
-            link: "#",
-        },
-    ];
+    
 
     return (
         <footer className="footer-section mt-5">
-
+            <button
+                className="back-to-top"
+                id="back-to-top-btn"
+                aria-label="Back to Top"
+                onClick={handleScrollToTop}
+            >
+                <i className="bi bi-arrow-up text-dark fs-5"></i>
+            </button>
             <div className="container">
                 <div className="row g-5">
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-3 col-md-6 col-12">
                         <h5 className='text-white'>Exclusive</h5>
-                        <p className="mb-4">Subscribe</p>
+                        <p className="mb-4 text-white">Subscribe</p>
                         <p className="small text-light mb-3">Get 10% off your first order</p>
                         <div className="subscribe-container">
                             <input type="email" className="subscribe-input" placeholder="Enter your email" aria-label="Subscribe Email" />
                             <button className="subscribe-btn" aria-label="Submit Email"><i className="bi bi-send"></i></button>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-3 col-md-6 col-12">
                         <h5 className='text-white'>Support</h5>
                         <p className="small text-light mb-2">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
                         <p className="small text-light mb-2">exclusive@gmail.com</p>
                         <p className="small text-light">+88015-88888-9999</p>
                     </div>
-                    <div className="col-lg-2 col-md-6">
+                    <div className="col-lg-2 col-md-6 col-12">
                         <h5 className='text-white'>Account</h5>
                         <ul className="small text-light d-flex align-items-start gap-3 flex-column ps-0 mt-2">
                             {
@@ -109,7 +54,7 @@ export default function Footer() {
                             }
                         </ul>
                     </div>
-                    <div className="col-lg-2 col-md-6">
+                    <div className="col-lg-2 col-md-6 col-12">
                         <h5 className='text-white'>Quick Link</h5>
                         <ul className="small text-light d-flex align-items-start gap-3 flex-column ps-0 mt-2">
                             {quickMenu.map((menu) => {
@@ -120,7 +65,7 @@ export default function Footer() {
                             })}
                         </ul>
                     </div>
-                    <div className="col-lg-2 col-md-6">
+                    <div className="col-lg-2 col-md-6 col-12">
                         <h5 className='text-white'>Download App</h5>
                         <p className="small text-light mb-3">Save $3 with App New User Only</p>
                         <div className="qr-download-container mb-3 d-flex align-items-center gap-2">

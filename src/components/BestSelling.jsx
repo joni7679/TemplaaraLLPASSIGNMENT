@@ -1,6 +1,7 @@
 import React from 'react'
 import { sellingproducts } from '../data/sellingProducat'
 import ProductCard from './ProductCard'
+import Button from './Button'
 
 const BestSelling = () => {
     return (
@@ -12,19 +13,19 @@ const BestSelling = () => {
                             <h3 className='inter selling-title'>Best Selling Products</h3>
                         </div>
                         <div>
-                            <button className='primary-btn'>View All</button>
+                            <Button title="View All" />
                         </div>
                     </div>
                     <div className="row">
-                            {
-                                sellingproducts.map((product) => {
-                                    return (
-                                        <div className='grid col-lg-3 col-md-6 col-12 mt-5'>
-                                            <ProductCard key={product.id} product={product} />
-                                        </div>
-                                    )
-                                })
-                            }
+                        {
+                            sellingproducts.map((product) => {
+                                return (
+                                    <div className='grid col-lg-3 col-md-6 col-12 mt-5'>
+                                        <ProductCard key={product.id} product={product} />
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </section>
